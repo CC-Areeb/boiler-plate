@@ -1,0 +1,196 @@
+[2023-05-09 14:46:22] production.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-09 14:47:22] production.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-11 08:57:19] local.ERROR: could not find driver (SQL: select * from information_schema.tables where table_schema = laravel and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): could not find driver (SQL: select * from information_schema.tables where table_schema = laravel and table_name = migrations and table_type = 'BASE TABLE') at D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:712)
+[stacktrace]
+#0 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback()
+#1 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(376): Illuminate\\Database\\Connection->run()
+#2 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select()
+#3 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable()
+#4 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(673): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(110): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(78): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(606): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#8 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(98): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#9 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#10 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#12 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#13 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call()
+#14 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call()
+#15 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute()
+#16 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#17 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Application.php(1040): Illuminate\\Console\\Command->run()
+#18 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand()
+#19 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#20 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run()
+#21 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run()
+#22 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#23 {main}
+
+[previous exception] [object] (PDOException(code: 0): could not find driver at D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct()
+#1 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#3 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect()
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1064): call_user_func()
+#6 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1100): Illuminate\\Database\\Connection->getPdo()
+#7 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(442): Illuminate\\Database\\Connection->getReadPdo()
+#8 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(368): Illuminate\\Database\\Connection->getPdoForSelect()
+#9 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#10 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback()
+#11 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(376): Illuminate\\Database\\Connection->run()
+#12 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select()
+#13 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable()
+#14 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(673): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(110): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(78): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(606): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(98): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#19 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#22 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#23 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call()
+#24 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call()
+#25 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute()
+#26 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#27 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Application.php(1040): Illuminate\\Console\\Command->run()
+#28 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand()
+#29 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#30 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run()
+#31 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run()
+#32 D:\\laravel-boilerplate\\Laravel-Boilerplate-main\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 {main}
+"} 
+[2023-05-12 11:32:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-12 11:33:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-12 11:34:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-12 11:35:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-12 11:36:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-12 11:37:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-12 11:38:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-25 15:44:13] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-25 15:44:19] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-25 15:44:37] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-25 15:45:36] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-25 15:46:36] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-25 15:47:36] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-25 15:48:35] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:05:36] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:06:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:07:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:08:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:09:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:10:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:11:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:12:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:13:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:14:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:15:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:16:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:17:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:18:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:19:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:20:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-30 09:21:12] local.ERROR: Cannot redeclare getAllCountries() (previously declared in D:\Areeb\D\laravel-boilerplate\Laravel-Boilerplate-main\app\helpers.php:13) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare getAllCountries() (previously declared in D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:13) at D:\\Areeb\\D\\laravel-boilerplate\\Laravel-Boilerplate-main\\app\\helpers.php:11)
+[stacktrace]
+#0 {main}
+"} 
